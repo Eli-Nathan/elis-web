@@ -1,0 +1,591 @@
+/* line 26, sass/var.scss */
+.text-center {
+  text-align: center;
+}
+
+/* line 29, sass/var.scss */
+.text-left {
+  text-align: left;
+}
+
+/* line 32, sass/var.scss */
+.text-right {
+  text-align: right;
+}
+
+/* line 55, sass/var.scss */
+.navbar-toggle {
+  border: none !important;
+  background-color: transparent !important;
+}
+/* line 58, sass/var.scss */
+.navbar-toggle:hover {
+  border: none !important;
+  background-color: transparent !important;
+}
+/* line 62, sass/var.scss */
+.navbar-toggle:focus {
+  border: none !important;
+  background-color: transparent !important;
+}
+
+/*Fonts*/
+@font-face {
+  font-family: 'reg';
+  src: url("../fonts/reg/reg.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/reg/reg.eot?#iefix") format("embedded-opentype"), url("../fonts/reg/reg.woff2") format("woff2"), url("../fonts/reg/reg.woff") format("woff"), url("../fonts/reg/reg.ttf") format("truetype"), url("../fonts/reg/reg.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'sub';
+  src: url("../fonts/sub/sub.eot");
+  /* IE9 Compat Modes */
+  src: url("../fonts/sub/sub.eot?#iefix") format("embedded-opentype"), url("../fonts/sub/sub.woff") format("woff"), url("../fonts/sub/sub.ttf") format("truetype"), url("../fonts/sub/sub.svg#svgFontName") format("svg");
+  /* Legacy iOS */
+}
+@font-face {
+  font-family: 'cove';
+  src: url("../fonts/cove.otf") format("opentype");
+}
+@font-face {
+  font-family: 'cove-b';
+  src: url("../fonts/cove-b.otf") format("opentype");
+}
+/*Nav*/
+/* line 27, sass/blog.scss */
+.navbar {
+  background: #2a2929;
+  border: none;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+  height: 10vh;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+@media (max-width: 768px) {
+  /* line 34, sass/blog.scss */
+  .navbar .container-fluid {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+}
+/* line 39, sass/blog.scss */
+.navbar a {
+  color: #fff !important;
+  font-family: 'cove', verdana;
+  font-weight: 700;
+  font-size: 20px;
+  transition: .5s;
+  padding-top: 10px;
+}
+/* line 47, sass/blog.scss */
+.navbar li {
+  padding-top: 10px;
+}
+@media (max-width: 768px) {
+  /* line 50, sass/blog.scss */
+  .navbar li:nth-child(even) {
+    background-color: #555555;
+  }
+}
+/* line 55, sass/blog.scss */
+.navbar a:hover {
+  background: #2a2929 !important;
+  color: #FFF !important;
+}
+/* line 60, sass/blog.scss */
+.navbar .navbar-header button {
+  border: none !important;
+  background: transparent !important;
+}
+/* line 63, sass/blog.scss */
+.navbar .navbar-header button:hover {
+  background: transparent !important;
+}
+/* line 67, sass/blog.scss */
+.navbar .navbar-header i {
+  font-size: 30px;
+}
+/* line 70, sass/blog.scss */
+.navbar .navbar-header .navbar-brand {
+  width: 60%;
+}
+/* line 72, sass/blog.scss */
+.navbar .navbar-header .navbar-brand img {
+  width: 8%;
+  margin-top: -10px;
+}
+@media (max-width: 768px) {
+  /* line 72, sass/blog.scss */
+  .navbar .navbar-header .navbar-brand img {
+    width: 13%;
+  }
+}
+@media (max-width: 600px) {
+  /* line 70, sass/blog.scss */
+  .navbar .navbar-header .navbar-brand {
+    margin-top: -60px;
+    width: 100% !important;
+  }
+}
+@media (min-width: 768px) {
+  /* line 70, sass/blog.scss */
+  .navbar .navbar-header .navbar-brand {
+    position: absolute;
+  }
+}
+/* line 86, sass/blog.scss */
+.navbar .navbar-header .navbar-brand:hover {
+  border: none !important;
+}
+/* line 91, sass/blog.scss */
+.navbar .navbar-collapse {
+  background: #2a2929 !important;
+  color: #fff;
+  width: 100% !important;
+  margin: 0 auto;
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+/* line 97, sass/blog.scss */
+.navbar .navbar-collapse a {
+  text-align: center;
+}
+
+/* line 105, sass/blog.scss */
+html, body {
+  overflow-x: hidden;
+  /* prevents horizontal scroll bars */
+  -webkit-tap-highlight-color: transparent;
+  /* disable webkit tap highlight */
+}
+
+/* line 112, sass/blog.scss */
+.head {
+  background: url("../blog/images/notepad.png");
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  margin-top: 8vh;
+}
+
+/* line 120, sass/blog.scss */
+.headSub {
+  display: block !important;
+  color: #fff;
+  margin-bottom: 30px;
+  font-family: 'Lato', verdana;
+  font-weight: 300 !important;
+  text-shadow: none !important;
+}
+
+/* line 129, sass/blog.scss */
+.blogHead {
+  padding-top: 50px;
+}
+/* line 131, sass/blog.scss */
+.blogHead hr {
+  background-color: #fff;
+  color: #fff;
+  border: none;
+}
+
+/* line 138, sass/blog.scss */
+.blog {
+  display: block !important;
+  color: #fff;
+  margin-bottom: 30px;
+  font-family: 'Lato', verdana;
+  font-weight: 300 !important;
+  text-shadow: none !important;
+  text-align: left;
+  margin-top: -5vh;
+}
+/* line 147, sass/blog.scss */
+.blog p {
+  text-shadow: none !important;
+}
+
+/* line 152, sass/blog.scss */
+.head-con p {
+  font-size: 25px !important;
+  font-family: 'cove-b';
+}
+
+/* line 157, sass/blog.scss */
+.logoDiv img {
+  width: 20%;
+  margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  /* line 163, sass/blog.scss */
+  .logoDiv img {
+    width: 40% !important;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 170, sass/blog.scss */
+  .logoDiv {
+    margin-top: 5vh;
+    margin-bottom: 0vh;
+  }
+  /* line 171, sass/blog.scss */
+  .logoDiv img {
+    width: 40%;
+  }
+
+  /* line 177, sass/blog.scss */
+  .btnTop {
+    margin-top: 0vh !important;
+    width: 30% !important;
+  }
+
+  /* line 181, sass/blog.scss */
+  .head {
+    background-position: 30% 50%;
+  }
+}
+/* line 187, sass/blog.scss */
+.head h1 {
+  display: inline;
+  float: none;
+  color: #fff;
+  text-shadow: 2px 2px #cc5b23;
+  font-size: 85px;
+  font-family: 'sub', verdana;
+  margin-top: 0vh;
+  text-transform: uppercase;
+}
+/* line 197, sass/blog.scss */
+.head p {
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+
+/* line 204, sass/blog.scss */
+.btnTop {
+  background-color: transparent;
+  color: #fff;
+  font-weight: 700;
+  border: 3px solid #fff;
+  font-size: 20px;
+  margin-top: 30px;
+  width: 10%;
+  height: 50px;
+  transition-duration: 0.5s;
+}
+
+/* line 216, sass/blog.scss */
+.btn {
+  background-color: transparent;
+  color: #cc5b23;
+  font-weight: 700;
+  border: 3px solid #cc5b23;
+  font-size: 20px;
+}
+
+/* line 224, sass/blog.scss */
+.btnTop:hover {
+  color: #fff;
+  border: 3px solid #464341;
+  background-color: rgba(204, 91, 35, 0.76);
+}
+
+@media (max-width: 1000px) {
+  /* line 232, sass/blog.scss */
+  .head h1 {
+    font-size: 40px;
+  }
+  /* line 235, sass/blog.scss */
+  .head p {
+    font-size: 15px;
+  }
+
+  /* line 239, sass/blog.scss */
+  .head-content {
+    margin-top: 0px;
+  }
+
+  /* line 242, sass/blog.scss */
+  #container p {
+    display: none;
+  }
+
+  /* line 245, sass/blog.scss */
+  .btnTop {
+    font-size: 15px;
+  }
+}
+/* line 250, sass/blog.scss */
+img {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+/* line 255, sass/blog.scss */
+hr {
+  color: #cc5b23;
+  background-color: #cc5b23;
+  border: none;
+  height: 3px;
+  width: 20%;
+}
+
+/* line 262, sass/blog.scss */
+.allArticles {
+  margin-top: 40px;
+}
+
+/* line 265, sass/blog.scss */
+.blogFull {
+  padding-left: 5%;
+  padding-right: 5%;
+  font-size: 18px;
+  font-family: 'Lato', verdana;
+  padding-bottom: 5%;
+}
+/* line 266, sass/blog.scss */
+.blogFull .images {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media (max-width: 768px) {
+  /* line 265, sass/blog.scss */
+  .blogFull {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+/* line 279, sass/blog.scss */
+.blogFull h1 {
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  /* line 279, sass/blog.scss */
+  .blogFull h1 {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  /* line 279, sass/blog.scss */
+  .blogFull h1 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+@media (max-width: 768px) {
+  /* line 289, sass/blog.scss */
+  .blogFull h2 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* line 295, sass/blog.scss */
+.blogFull h3 {
+  color: #cc5b23;
+}
+@media (max-width: 768px) {
+  /* line 295, sass/blog.scss */
+  .blogFull h3 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* line 302, sass/blog.scss */
+.blogFull img {
+  width: 100%;
+}
+/* line 305, sass/blog.scss */
+.blogFull p {
+  font-weight: 300;
+  line-height: 30px;
+}
+@media (max-width: 768px) {
+  /* line 305, sass/blog.scss */
+  .blogFull p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+/* line 313, sass/blog.scss */
+.blogFull a {
+  font-weight: 400;
+  color: #cc5b23;
+}
+/* line 317, sass/blog.scss */
+.blogFull ul {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+/* line 321, sass/blog.scss */
+.blogFull hr {
+  margin-left: 0px;
+}
+@media (max-width: 768px) {
+  /* line 321, sass/blog.scss */
+  .blogFull hr {
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    width: 100%;
+  }
+}
+
+/* line 332, sass/blog.scss */
+.thanks {
+  margin-top: 50px;
+  font-weight: 700 !important;
+  color: #cc5b23;
+}
+
+/* line 338, sass/blog.scss */
+.myths {
+  margin-top: 50px;
+}
+
+/* line 342, sass/blog.scss */
+.postCon {
+  padding: 1%;
+  margin-bottom: 50px;
+  margin-top: 0px;
+}
+
+/* line 347, sass/blog.scss */
+.dateWritten {
+  color: #cc5b23;
+}
+
+/* line 351, sass/blog.scss */
+.postImgCon {
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+/* line 355, sass/blog.scss */
+.postImgCon img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* line 361, sass/blog.scss */
+.postTextCon hr {
+  margin-left: 0px;
+}
+
+/* line 365, sass/blog.scss */
+.postImgCon2 img {
+  width: 100%;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+@media (max-width: 900px) {
+  /* line 365, sass/blog.scss */
+  .postImgCon2 img {
+    margin-top: 0px;
+  }
+}
+
+/* line 374, sass/blog.scss */
+.postCon p {
+  font-weight: 300;
+  line-height: 30px;
+  font-size: 18px;
+  font-family: 'Lato', verdana;
+}
+
+/* line 381, sass/blog.scss */
+.postTextCon {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+/* line 384, sass/blog.scss */
+.postTextCon a {
+  font-family: 'Lato', verdana;
+  color: #000 !important;
+}
+/* line 388, sass/blog.scss */
+.postTextCon h4 {
+  font-family: 'Lato', verdana;
+  font-size: 30px;
+  color: #000 !important;
+}
+
+/* line 395, sass/blog.scss */
+.related, .blogFull {
+  margin-top: 30px;
+}
+
+/* line 399, sass/blog.scss */
+.lowerc {
+  text-transform: none !important;
+}
+
+/* line 403, sass/blog.scss */
+.listHead {
+  color: #cc5b23;
+  font-size: 30px;
+  margin: 30px;
+  margin-top: 50px !important;
+}
+
+/* line 410, sass/blog.scss */
+.footer {
+  font-size: 15px;
+  line-height: 16px;
+  line-height: 1rem;
+  padding-top: 30px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  background: #464341;
+  text-transform: uppercase;
+}
+/* line 419, sass/blog.scss */
+.footer p {
+  margin: 0;
+  padding-top: 2px;
+  line-height: 20px;
+}
+/* line 424, sass/blog.scss */
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+/* line 428, sass/blog.scss */
+.footer ul {
+  list-style-type: none;
+  color: #cc5b23;
+  text-align: center;
+}
+/* line 433, sass/blog.scss */
+.footer li {
+  display: inline;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* line 438, sass/blog.scss */
+.footer img {
+  width: 18px;
+}
+/* line 441, sass/blog.scss */
+.footer i {
+  color: #cc5b23;
+  font-size: 20px;
+}
+
+/* line 446, sass/blog.scss */
+.tsncs {
+  text-transform: capitalize;
+  color: #cc5b2c;
+}
+/* line 449, sass/blog.scss */
+.tsncs a {
+  font-weight: bold;
+  color: #cc5b2c;
+}

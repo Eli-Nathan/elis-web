@@ -1,0 +1,106 @@
+// Colours Here
+$white: #FFF;
+$black: #000;
+$dark: #222!important;
+$light: #EEE!important;
+
+
+//Remove bootstrap's side padding
+@mixin no-pad {
+    padding-left:0px!important;
+    padding-right:0px!important;
+}
+
+
+//Full background image (needs image)
+@mixin full-background {
+  background: {
+     size: cover;
+     position: center;
+     repeat: no-repeat;
+  }
+}
+
+
+// Text alignment
+.text-center {
+    text-align:center;
+}
+.text-left {
+    text-align:left;
+}
+.text-right {
+    text-align:right;
+}
+
+
+// Justified Bootstrap Navigation
+@mixin justify-nav {
+@media (min-width: 768px) {
+    .navbar {
+        .navbar-nav {
+            display: inline-block;
+            float: none;
+            vertical-align: top;
+        }
+        .navbar-collapse {
+            text-align: center;
+        }
+    }
+}
+}
+
+
+//Remove bootstrap styles for nav-toggle
+.navbar-toggle {
+    border:none!important;
+    background-color:transparent!important;
+&:hover {
+    border:none!important;
+    background-color:transparent!important;
+}
+&:focus {
+    border:none!important;
+    background-color:transparent!important;
+}
+}
+
+
+// Remove bootstrap carousel gradient
+@mixin no-gradient {
+.carousel-control {
+       background-image:none!important;
+}
+}
+
+
+// Bootstrap Carousel Fade
+@mixin fade-carousel {
+.carousel-fade {
+    .carousel-inner {
+        .item {
+            transition-property: opacity;
+        }
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+    .carousel-control {
+        z-index: 2;
+    }
+}
+}
