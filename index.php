@@ -1,5 +1,5 @@
 <?php
-// Is this comment here? added
+// Is this comment here? added added2
 $error = "";
 $success = "";
 if (isset($_POST['contactSub']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
