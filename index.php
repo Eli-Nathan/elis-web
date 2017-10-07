@@ -1,4 +1,9 @@
 <?php
+/*
+1: Is this comment here?
+2: added
+3: added2
+*/
 $error = "";
 $success = "";
 if (isset($_POST['contactSub']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -67,6 +72,7 @@ if (isset($_POST['contactSub']) && $_SERVER['REQUEST_METHOD'] == 'POST') {
 }
 
 // Mailing List
+
 
 $mailingError = "";
 $mailingSuccess = "";
